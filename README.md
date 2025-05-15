@@ -36,7 +36,7 @@ MatMCL/
 ```
 
 ## Quick start
-You can download the trained model checkpoints and datasets for a quick start.
+You can download the trained model checkpoints and datasets from the [link](https://figshare.com/s/0cad763a26f928b70840) for a quick start.
 Please place the downloaded `datasets/` and `models/` directories directly under the project root.
 
 Then, navigate to the `scripts/` directory and run the following command to execute the example tasks (including mechanical property prediction and structure generation):

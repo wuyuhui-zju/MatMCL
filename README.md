@@ -2,6 +2,16 @@
 
 This is the official implementation of **MatMCL**, a versatile multimodal learning framework bridging multi-scale knowledge for material design.
 
+## Overview
+MatMCL is a unified multimodal learning framework designed to bridge multiscale material knowledge for intelligent material design. It follows a pipeline comprising three stages:
+- **Multimodal dataset construction.** A comprehensive dataset is created by experimentally characterizing electrospun nanofibers. Each sample includes processing parameters, SEM-based microstructures, and mechanical properties.
+- **Structure-guided pre-training.** A multimodal contrastive learning strategy is employed to align and fuse the processing and structural modalities into a shared latent space.
+- **Downstream applications.** Property prediction: Enables robust mechanical property prediction even when structural information is unavailable. Cross-modal retrieval: Retrieves corresponding microstructures given processing conditions, and vice versa, via similarity in the joint embedding space. Conditional structure generation: Generates microstructures from processing conditions using a diffusion-based decoder guided by a prior.
+<div align="center">
+  <img src="image/overview.jpg" alt="Overview" />
+</div>
+
+
 ## System requirements
 This package has been tested on the following system:
 - Linux: Ubuntu 22.04
@@ -36,8 +46,8 @@ MatMCL/
 ```
 
 ## Quick start
-You can download the trained model checkpoints and datasets for a quick start.
-Please place the downloaded `datasets/` and `models/` directories directly under the project root.
+You can download the trained model checkpoints and datasets from the given url for a quick start.
+Please place the downloaded `datasets/` and `models/` directories under the project root.
 
 Then, navigate to the `scripts/` directory and run the following command to execute the example tasks (including mechanical property prediction and structure generation):
 ```
@@ -85,4 +95,16 @@ bash train_decoder.sh
 - Use `--save` to enable saving, and specify the save path with `--save_path`.
 
 ## Citation
-If you find MatMCL helpful, please cite our work. (The official paper will be available soon.)
+If you find MatMCL helpful, please cite our work.
+```
+@article{wu2025versatile,
+  title={A versatile multimodal learning framework bridging multiscale knowledge for material design},
+  author={Wu, Yuhui and Ding, Minmin and He, Haonan and Wu, Qijun and Jiang, Shaohua and Zhang, Peng and Ji, Jian},
+  journal={npj Computational Materials},
+  volume={11},
+  number={1},
+  pages={276},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
+}
+```

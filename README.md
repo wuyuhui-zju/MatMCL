@@ -1,6 +1,6 @@
 # MatMCL: A versatile multimodal learning framework bridging multi-scale knowledge for material design
 
-This is the official implementation of **MatMCL**, a versatile multimodal learning framework bridging multi-scale knowledge for material design.
+This is the official implementation of **MatMCL**, [a versatile multimodal learning framework bridging multi-scale knowledge for material design](https://www.nature.com/articles/s41524-025-01767-3).
 
 ## Overview
 MatMCL is a unified multimodal learning framework designed to bridge multiscale material knowledge for intelligent material design. It follows a pipeline comprising three stages:
